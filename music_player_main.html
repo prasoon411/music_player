@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Music Player</title>
+	<link rel="stylesheet" type="text/css" href="css/music_player_main.css">
+	
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="animate.min.css">
+	
+  <script src="https://kit.fontawesome.com/41c8fb69c7.js" crossorigin="anonymous"></script>
+	
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body style="background: url(images/background-2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ ">
+  
+  <header id="header_container"> <!--header container-->
+
+    <div id="main_logo" class="header_member">
+          <img src="images/img13.jpg" alt="online_logo_image" id="main_logo_image">
+    </div>
+    <nav id="head_nav">
+
+        <div id="fav_container" class="header_member">Favourites
+        </div>
+        
+        <div id = "leftmost-header">
+        <div id="search_bar" class="header_member">
+          <input type="text" name="search_engine"   placeholder="search" id="search_bar_box">
+        </div>  
+          
+        
+        <div  class="header_member" id="notification">
+          <img src="images/notii.png" id="notification_icon">
+        </div>
+        <div id="login_icon" class="header_member" style="background-image: url(images/img1.jpg);">
+
+        </div>
+      </div>
+
+      </nav>
+    </header>
+  
+  <main> 	
+  <div id="main-container">
+    <div id="main-carousel-container">
+      
+      <div id="first-image">
+      	<img src="images/img1.jpg">
+      </div>
+      
+      <div id="second-image">
+      	<img src="images/img1.jpg">
+      </div>
+      
+      <div id="third-image">
+         <img src="images/img1.jpg">
+      </div>
+    
+    </div>
+
+
+    <p class="sub-heading"> Latest Release </p>
+    <div id="latest-release">
+    	<div class="latest-release-container">
+    		<div>
+    		<img src="images/diljit.jpg">
+    	 </div>
+    	 <div class="sub-heading-content-name">
+    		<p>Song #</p>
+    	</div>
+    	   <div class="icon-latest-div"></div>
+    	</div>
+
+        <div class="latest-release-container">
+    		<div>
+    		<img src="images/diljit.jpg">
+    	    </div>
+    	    <div class="sub-heading-content-name">
+    		<p>Song #</p>
+    	    </div>
+    	</div>
+    	
+        <div class="latest-release-container">
+    		<div>
+    		<img src="images/diljit.jpg">
+    	    </div>
+    	    <div class="sub-heading-content-name">
+    		<p>Song #</p>
+    	    </div>
+    	</div>
+
+        <div class="latest-release-container">
+    		<div>
+    		<img src="images/diljit.jpg">
+    	    </div>
+    	    <div class="sub-heading-content-name">
+    		<p>Song #</p>
+    		 
+    	    </div>
+    	</div>
+    
+    </div>
+
+    <p class="sub-heading">Popular Artists</p>
+    <div id="popular-artists-container">
+      <div class="meta-info">
+        <a href="singers_list.html">
+        <img src="images/img14.jpg">
+        </a>        
+        <p>#Song</p>
+      </div>
+
+      <div class="meta-info" >
+      	<img src="images/img15.jpg">
+      	<p>#Song</p>
+      </div>
+      
+      <div class="meta-info">
+      	<img src="images/img16.jpg">
+      	<p>#Song</p>	
+      </div>
+      <div class="meta-info">
+      	<img src="images/img14.jpg">
+      	<p>#Song</p>
+      </div>
+      <div class="meta-info">
+      	<img src="images/img15.jpg">
+      	<p>#Song</p>
+      </div>
+      <div class="meta-info">
+      	<img src="images/img16.jpg">
+      	<p>#Song</p>
+      </div>
+
+   </div>
+  <!-- Genre Container -->
+
+   <div id="genre">
+   	<div id="genre-cover">
+      <div class="genre-logo">
+      	<img src="images/img7.jpg">
+      	<div class="genre-txt">
+      	 Genre
+      	</div>
+      </div>
+     
+   	  <div class="genre-content">
+      	<img src="images/img8.jpg">
+      	<div class="genre-name">
+      	Romantic
+        </div>
+      </div>
+      <div class="genre-content" >
+      	<img src="images/img8.jpg">
+      	<div class="genre-name">
+      	Retro
+        </div>
+      </div>
+      <div class="genre-content">
+      	<img src="images/img8.jpg">
+      	<div class="genre-name">
+      	Chill
+        </div>
+      </div>
+      <div class="genre-content">
+      	<img src="images/img8.jpg">
+      	<div class="genre-name">
+      	gym
+        </div>
+      </div>
+      <div class="genre-content">
+      	<img src="images/img8.jpg">
+      	<div class="genre-name">
+      	Moody
+        </div>
+      </div>
+      <div class="genre-content">
+      	<img src="images/img8.jpg">
+      	<div class="genre-name">
+      	Rap
+        </div>
+      </div>
+
+     </div>
+   </div>
+    
+   <div id="moods">
+
+   	<div class="moods-content">
+   	  <img src="images/img6.jpeg" >
+   	  <div class="moods-type">
+   	   Party
+   	  </div>
+   	</div>
+
+   	<div class="moods-content">
+   	  <img src="images/diljit.jpg" >
+   	  <div class="moods-type">
+   	   Electronic
+   	  </div>
+   	</div>
+
+   	<div class="moods-content">
+   	   <img src="images/img3.jpg" >
+   	  <div class="moods-type    ">
+   	   Road Trip
+   	  </div>
+   	</div>
+
+   </div>
+
+   <p class=" sub-heading">Latest English</p>
+   <div class="latest-songs">
+
+   	 <div class="latest-songs-content">
+   	 	<img src="images/img9.jpg">
+   	 	<p class="song-info">Song #</p>
+   	 	 
+   	 </div>
+   	 <div class="latest-songs-content">
+   	 	<img src="images/img9.jpg">
+   	 	<p class="song-info">Song #</p>
+   	 	 
+   	 </div>
+   	 <div class="latest-songs-content">
+   	 	<img src="images/img9.jpg">
+   	 	<p class="song-info">Song #</p>
+   	 	 
+   	 </div>
+     <div class="latest-songs-content">
+   	 	<img src="images/img9.jpg">
+   	 	<p class="song-info">Song #</p>
+   	 	 
+   	 </div>
+     <div class="latest-songs-content">
+   	 	<img src="images/img9.jpg">
+   	 	<p class="song-info">Song #</p>
+   	 	 
+   	 </div>
+     <div class="latest-songs-content">
+   	 	<img src="images/img9.jpg">
+   	 	<p class="song-info">Song #</p>
+   	 	 
+   	 </div>
+
+   </div>
+   <p class="sub-heading">Latest Hindi</p>
+   <div class="latest-songs				">
+
+   	 <div class="latest-songs-content">
+   	 	<img src="images/img11.jpg">
+   	 	<p class="song-info">Song #</p>
+   	 	 
+   	 </div>
+   	 <div class="latest-songs-content">
+   	 	<img src="images/img11.jpg">
+   	 	<p class="song-info">Song #</p>
+   	 	 
+   	 </div>
+   	 <div class="latest-songs-content">
+   	 	<img src="images/img11.jpg">
+   	 	<p class="song-info">Song #</p>
+   	 	 
+   	 </div>
+     <div class="latest-songs-content">
+   	 	<img src="images/img11.jpg">
+   	 	<p class="song-info">Song #</p>
+   	 	 
+   	 </div>
+     <div class="latest-songs-content">
+   	 	<img src="images/img11.jpg">
+   	 	<p class="song-info">Song #</p>
+   	 	 
+   	 </div>
+     <div class="latest-songs-content">
+   	 	<img src="images/img11.jpg">
+   	 	<p class="song-info">Song #</p>
+   	 	 
+   	 </div>
+
+   </div>
+  </div>
+
+ </main>
+ 
+ <aside>
+
+  <div id="right-menu">
+  	<div id="rmenu-header">
+  	  <p>Playlist</p>
+  	</div>
+  	
+    <div id="header-dropdown">
+  	  <p>To be played..</p>
+  	</div>
+
+  </div>
+  <div class="dropdown-menu">
+      <i class="dropbutton fas fa-chevron-down"></i>
+      <div class="dropdown-content">
+      	<a href="#">Playlists</a>
+      	<a href="#">Favourite Songs</a>
+        <a href="#">Suggestions</a>
+        <a href="#">Downloaded</a>
+      </div>
+  	</div>
+  <div class="right-menu-container">
+    
+
+    <div class="playlist-content">
+      <div class="playlist-serialNo">
+    	  <p>01</p>
+    	</div>
+      <div>
+    	  <img src="images/diljit.jpg">
+    	</div>
+      <div class="playlist-extra">
+    	  <div class="playlist-song-name">
+          <p>Memba</p>  
+    	  </div>
+    	  <div class="playlist-like-icon">
+    		  <i class="far fa-heart"></i>
+    	  </div>
+      </div>
+    </div>
+
+    <div class="playlist-content">
+      <div class="playlist-serialNo">
+        <p>01</p>
+      </div>
+      <div>
+        <img src="images/diljit.jpg">
+      </div>
+      <div class="playlist-extra">
+        <div class="playlist-song-name">
+          <p>Memba</p>  
+        </div>
+        <div class="playlist-like-icon">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+    </div>
+    <div class="playlist-content">
+      <div class="playlist-serialNo">
+        <p>01</p>
+      </div>
+      <div>
+        <img src="images/diljit.jpg">
+      </div>
+      <div class="playlist-extra">
+        <div class="playlist-song-name">
+          <p>Memba</p>  
+        </div>
+        <div class="playlist-like-icon">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+    </div>
+    <div class="playlist-content">
+      <div class="playlist-serialNo">
+        <p>01</p>
+      </div>
+      <div>
+        <img src="images/diljit.jpg">
+      </div>
+      <div class="playlist-extra">
+        <div class="playlist-song-name">
+          <p>Memba</p>  
+        </div>
+        <div class="playlist-like-icon">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+    </div>
+    <div class="playlist-content">
+      <div class="playlist-serialNo">
+        <p>01</p>
+      </div>
+      <div>
+        <img src="images/diljit.jpg">
+      </div>
+      <div class="playlist-extra">
+        <div class="playlist-song-name">
+          <p>Memba</p>  
+        </div>
+        <div class="playlist-like-icon">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+    </div>
+    <div class="playlist-content">
+      <div class="playlist-serialNo">
+        <p>01</p>
+      </div>
+      <div>
+        <img src="images/diljit.jpg">
+      </div>
+      <div class="playlist-extra">
+        <div class="playlist-song-name">
+          <p>Memba</p>  
+        </div>
+        <div class="playlist-like-icon">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+ </aside>  
+
+ <div id="music_control">
+ <div id="left-music"> 
+  <img src="images/img1.jpg" id="left-music-img" >
+  <div id= "current-music-info">
+     <div id ="music-name" >Do you love me</div>
+     <div id ="singer-name">Baaghi3</div>
+ </div>
+</div>
+ <audio controls >
+      <source src="audio/dylm.mp3" type="audio/mp3">
+</audio>
+ <div id="right-music">
+  <div class="player-option">
+    <i class="fas fa-volume-mute"></i>
+  </div>
+   <div class="player-option">
+    <i class="fas fa-volume-down"></i>
+  </div>
+
+  <div class="player-option">
+    <i class="fas fa-bell"></i>
+  </div>
+  
+
+ </div>
+
+ </div>
+
+</body>
+</html>
